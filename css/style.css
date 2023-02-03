@@ -83,6 +83,24 @@ menu a:hover{
     margin-left: 10px;
 }
 
+table{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    
+}
+
+tbody td{
+    padding-right: 15%;
+}
+
+.description{
+    margin-bottom: 25px;
+}
+
+.dos{
+    margin-top: 25px;
+}
 
 footer {
     background-color: #333;
