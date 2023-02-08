@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    border: 1px solid black;
+    
+}
+
+
+
+
+input[placeholder]{
+    padding-left: 15px;
+}
+
+
+input{
+    padding: 10px;
+}
+
+input[type="text"]{
+    padding-left: 15px;
+}
+
+section{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
