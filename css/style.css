@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
+
+
 .container{
-    width: 94%;
+    width: 100%;
     height: 325px;
-    margin-top: 35px;
-    margin-left: 21px;
+    margin-top: -63px;
+    margin-left: 0px;
+    margin-right: 14px;
     font-size: 1.5rem;
     background-position-y: -38px;
     background-image: url(../images/design1_image1.jpg);
@@ -27,7 +30,7 @@
     
 }
 
-a{
+.navegador{
     border: 1px solid black;
     display: flex;
     padding: 4px;
@@ -35,38 +38,53 @@ a{
     font-size: 25px;
     justify-content: space-around;
     align-content: stretch;
+    margin-left: 25px;  
+    display: flex;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 25px;
+    justify-content: space-around;
+    align-content: stretch;
     margin-left: 25px;
+    color: white;
     
 }
 
-menu a:hover{
-    color: green;
+.navegador:hover{
+    background-color: yellow;
 }
+
 
 .sub-menu{
     display: flex;
     justify-content: center;
     border: 1px solid black;
-    width: 97%;
-    font-size: 25px;
-    background-color:black ;
+    width: 100%;
+    font-size: 52px;
+    background-color: black;
     color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
+
 
 .main-container{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 25px;
+    justify-content: space-around;
 }
 
 .columna{
-    width: 33.33%;
+    width: 48.33%;
     display: flex;
-    justify-content: center;
     margin-top: 25px;
+    align-items: stretch;
 }
 
 .columna img{
     width: 248px;
+    margin-left: 60px;
 }
 
 .columna h2{
@@ -76,22 +94,123 @@ menu a:hover{
 
 .side{
     margin-left: 36px;
+    border: 1px solid;
+    border-radius: 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightblue;
+    font-family: fantasy;
 }
 
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75vw;
+}
+
+.contentTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentArticle h3{
+    font-size: 2.1rem;
+    -webkit-text-stroke: 2px black;
+}
+
+.parraf{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.parraf ul li{
+    padding-top: 15px;
+    color: red;
+    font-size: 20px;
+}
 
 .side p{
     margin-left: 10px;
 }
 
-table{
-    display: flex;
-    justify-content: center;
-    border: 1px solid;
-    
+.agenda::after{
+    content: "";
+    background: url(../images/hockey\ \ 1.jpg);
+    background-position: 0 -9rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 120vh;
+    left: 0;    
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    height: 51vh;
+
 }
 
-tbody td{
-    padding-right: 15%;
+table, th, td{
+    border: 1px solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.3rem;
+}           
+
+.description{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    width: 80vw;
+}
+
+.descripcionParrafo p{
+    padding-left: 1.2rem;
+}
+
+.descripcionParrafo{
+    display: flex;
+    margin-bottom: 1.2rem;
+}
+
+.descripcionContacto{
+    display: flex;
+}
+
+.description a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    padding: 0 1.2rem;
+}
+
+.description h3, .description p{
+    font-size: 1.2rem;
+}
+
+.maps{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    width: 100vh;
+    align-items:center;
+    padding: 3rem;
+
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 .description{
@@ -102,10 +221,43 @@ tbody td{
     margin-top: 25px;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: -2rem;
+    padding: 3rem 0;
+
+}
+
+.personal{
+    display: inline-block;
+    width: 25%;
+}
+
+.fsPersonal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label{
+    padding: .6rem;
+}
+
+input{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.652);
+}
+.dataSentBody{
+    background-color: #0fd4d4;
+    align-items: center;
+    justify-content: space-around;
+}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
-  }
+}
   
